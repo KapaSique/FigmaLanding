@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-paper: var(--paper);
+  --color-sand: var(--sand);
+  --color-stone: var(--stone);
+  --color-pine: var(--pine);
+  --color-moss: var(--moss);
+  --color-wood: var(--wood);
+  --color-ink: var(--ink);
+
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+:root {
+  --radius: 0.9rem;
+
+  --paper: #f7f3ee;
+  --sand: #e7dfd2;
+  --stone: #b7b0a4;
+  --pine: #2e3a2f;
+  --moss: #556b52;
+  --wood: #7a5b44;
+  --ink: #1e1e1b;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: #fbf9f6;
+  --card-foreground: var(--ink);
+  --popover: #fbf9f6;
+  --popover-foreground: var(--ink);
+  --primary: var(--pine);
+  --primary-foreground: #fdfcfb;
+  --secondary: var(--sand);
+  --secondary-foreground: var(--pine);
+  --muted: #f0ebe3;
+  --muted-foreground: #6c655b;
+  --accent: var(--moss);
+  --accent-foreground: #fdfcfb;
+  --destructive: #a6493d;
+  --border: #d8d0c4;
+  --input: #e4ddd2;
+  --ring: rgba(85, 107, 82, 0.35);
+}
+
+.dark {
+  --background: #1a1c18;
+  --foreground: #f6f4f0;
+  --card: #20231f;
+  --card-foreground: #f6f4f0;
+  --popover: #20231f;
+  --popover-foreground: #f6f4f0;
+  --primary: #d8d0c4;
+  --primary-foreground: #1a1c18;
+  --secondary: #2c322c;
+  --secondary-foreground: #f6f4f0;
+  --muted: #2a2f2a;
+  --muted-foreground: #c0b8ac;
+  --accent: #7a8d76;
+  --accent-foreground: #11130f;
+  --border: rgba(246, 244, 240, 0.12);
+  --input: rgba(246, 244, 240, 0.16);
+  --ring: rgba(246, 244, 240, 0.35);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/60;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image:
+      radial-gradient(1200px 600px at 10% -10%, rgba(85, 107, 82, 0.08), transparent 60%),
+      radial-gradient(900px 500px at 90% 0%, rgba(122, 91, 68, 0.08), transparent 60%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.12'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: auto, auto, 200px 200px;
+  }
+
+  ::selection {
+    background: rgba(122, 91, 68, 0.25);
+  }
+}
+
+@layer utilities {
+  .glass {
+    backdrop-filter: blur(14px);
+    background: rgba(247, 243, 238, 0.7);
+    border: 1px solid rgba(214, 206, 196, 0.6);
+  }
+
+  .grid-fade {
+    background-image: linear-gradient(to bottom, rgba(247, 243, 238, 0), rgba(247, 243, 238, 1));
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F3EE" />
+      <stop offset="1" stop-color="#E7DFD2" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)" />
+  <circle cx="980" cy="120" r="220" fill="#556B52" fill-opacity="0.12" />
+  <circle cx="160" cy="520" r="180" fill="#7A5B44" fill-opacity="0.12" />
+  <text x="100" y="260" font-family="serif" font-size="72" fill="#1E1E1B">Tapiola</text>
+  <text x="100" y="330" font-family="sans-serif" font-size="32" fill="#6C655B">
+    Karelia forest tea collection
+  </text>
+</svg>

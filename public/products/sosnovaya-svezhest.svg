@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef1ea"/>
+      <stop offset="1" stop-color="#cad1c2"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0" cy="0" r="1" gradientTransform="translate(700 460) rotate(90) scale(430 520)">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.66"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bagGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4efe6"/>
+      <stop offset="1" stop-color="#e6dbc8"/>
+    </linearGradient>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="17" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.07"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#655443" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="1000" fill="url(#bg)"/>
+  <path d="M-40 760 C240 640, 470 700, 760 640 C1030 585, 1220 640, 1450 560 L1450 1060 L-40 1060 Z" fill="#e3e8df" opacity="0.95"/>
+  <path d="M-40 760 C240 640, 470 700, 760 640 C1030 585, 1220 640, 1450 560" stroke="#d2c6b7" stroke-width="5" opacity="0.42"/>
+  <path d="M-80 860 C220 740, 530 815, 790 765 C1010 724, 1210 785, 1450 730" stroke="#d9cebf" stroke-width="4" opacity="0.38"/>
+
+  <rect width="1400" height="1000" filter="url(#grain)" opacity="0.75"/>
+  <ellipse cx="700" cy="490" rx="390" ry="310" fill="url(#spot)"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="485" y="170" width="430" height="650" rx="54" fill="url(#bagGrad)"/>
+    <rect x="520" y="230" width="360" height="120" rx="26" fill="#f9f4ea" opacity="0.88"/>
+    <rect x="562" y="398" width="276" height="2" fill="#d4c4ad" opacity="0.45"/>
+    <circle cx="700" cy="560" r="88" fill="#ece0cf" opacity="0.8"/>
+    <text x="700" y="290" text-anchor="middle" font-size="44" font-family="'Georgia', 'Times New Roman', serif" fill="#5f4b37" letter-spacing="1">Tapiola</text>
+    <text x="700" y="327" text-anchor="middle" font-size="17" font-family="'Helvetica Neue', Arial, sans-serif" fill="#7e6b54" letter-spacing="5" opacity="0.88">KARELIA TEA</text>
+  </g>
+
+  <g>
+    <path d="M250 790 C325 690, 360 580, 410 460" fill="none" stroke="#4f664d" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+<path d="M1150 790 C1075 690, 1040 580, 990 460" fill="none" stroke="#4f664d" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+<path d="M375 650 l-72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M1025 650 l72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M383 628 l-72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M1017 628 l72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M391 606 l-72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M1009 606 l72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M399 584 l-72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M1001 584 l72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M407 562 l-72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M993 562 l72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M415 540 l-72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M985 540 l72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M423 518 l-72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M977 518 l72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M431 496 l-72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M969 496 l72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M439 474 l-72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M961 474 l72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M447 452 l-72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<path d="M953 452 l72 -24" fill="none" stroke="#496349" stroke-width="2.1" stroke-linecap="round" opacity="0.78"/>
+<ellipse cx="470" cy="530" rx="12" ry="34" transform="rotate(-22 470 530)" fill="#7f986f" opacity="0.9"/>
+<ellipse cx="445" cy="580" rx="12" ry="34" transform="rotate(10 445 580)" fill="#7f986f" opacity="0.9"/>
+<ellipse cx="930" cy="530" rx="12" ry="34" transform="rotate(22 930 530)" fill="#7f986f" opacity="0.9"/>
+<ellipse cx="955" cy="580" rx="12" ry="34" transform="rotate(-10 955 580)" fill="#7f986f" opacity="0.9"/>
+  </g>
+
+  <rect width="1400" height="1000" fill="none" stroke="#e6dccf" stroke-width="8" opacity="0.55"/>
+</svg>
