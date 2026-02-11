@@ -13,11 +13,7 @@
   <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Framer_Motion-11-E916A3?logo=framer&logoColor=white" alt="Framer Motion" />
-  <img src="https://img.shields.io/badge/Zustand-4-443E38?logo=react&logoColor=white" alt="Zustand" />
   <img src="https://img.shields.io/badge/Radix_UI-latest-161618?logo=radixui&logoColor=white" alt="Radix UI" />
-  <img src="https://img.shields.io/badge/Zod-3-3E67B1?logo=zod&logoColor=white" alt="Zod" />
-  <img src="https://img.shields.io/badge/ESLint-9-4B32C3?logo=eslint&logoColor=white" alt="ESLint" />
   <img src="https://img.shields.io/badge/Node.js-%3E%3D18-339933?logo=node.js&logoColor=white" alt="Node.js" />
 </p>
 
@@ -170,7 +166,7 @@ FigmaLanding/
 4. Корзина очищается
 5. Редирект на `/order/success`
 
-> Оплата реализована как заглушка. Место для подключения Stripe отмечено в `components/checkout/checkout-page.tsx`.
+> Оплата реализована как заглушка. Место для подключения Юкассы отмечено в `components/checkout/checkout-page.tsx`.
 
 ---
 
