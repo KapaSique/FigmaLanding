@@ -71,6 +71,23 @@ npm run dev
 
 ---
 
+## Запуск через Docker
+
+```bash
+# Собрать и запустить контейнер
+docker compose up --build
+```
+
+Приложение будет доступно на [http://localhost:3000](http://localhost:3000).
+
+Для остановки:
+
+```bash
+docker compose down
+```
+
+---
+
 ## Скрипты
 
 | Команда | Описание |
